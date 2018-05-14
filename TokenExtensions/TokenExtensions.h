@@ -1,8 +1,8 @@
 #ifndef TOKEN_TOKENEXTENSIONS_H
 #define TOKEN_TOKENEXTENSIONS_H
 
-#include "../TokenConstant/TokenConstant.h"
 #include "../Token.h"
+#include "../TokenConstant/TokenConstant.h"
 #include <string>
 #include <unordered_map>
 #include <unordered_set>

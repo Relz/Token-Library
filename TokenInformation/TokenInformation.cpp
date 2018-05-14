@@ -23,7 +23,7 @@ std::string const & TokenInformation::GetFileName()
 
 std::string TokenInformation::ToString() const
 {
-	return std::string(m_fileName.begin(), m_fileName.end()) + "[" + std::to_string(m_tokenStreamString.position.GetLine()) + ", "
+	return m_fileName + "[" + std::to_string(m_tokenStreamString.position.GetLine()) + ", "
 		+ std::to_string(m_tokenStreamString.position.GetColumn()) + "]: \n" + "\t" + "String : "
 		+ m_tokenStreamString.string + "\n" + "\t" + "Type   : " + TokenExtensions::ToString(m_token) + "\n";
 }

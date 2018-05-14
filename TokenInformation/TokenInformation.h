@@ -1,7 +1,7 @@
 #ifndef TOKEN_TOKENINFORMATION_H
 #define TOKEN_TOKENINFORMATION_H
 
-#include "../../InputLibrary/StreamStringLibrary/StreamString.h"
+#include "../StreamStringLibrary/StreamString.h"
 #include "../Token.h"
 #include "../TokenExtensions/TokenExtensions.h"
 #include <string>
@@ -10,8 +10,7 @@ class TokenInformation
 {
 public:
 	explicit TokenInformation() = default;
-	explicit TokenInformation(
-		Token token, StreamString const & tokenStreamString, std::string const & fileName = "");
+	explicit TokenInformation(Token token, StreamString const & tokenStreamString, std::string const & fileName = "");
 	Token GetToken();
 	StreamString const & GetTokenStreamString();
 	std::string const & GetFileName();
