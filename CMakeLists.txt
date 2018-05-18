@@ -15,3 +15,9 @@ SET(SOURCE_FILES
 	TokenInformation/TokenInformation.h)
 
 ADD_LIBRARY(TokenLibrary SHARED ${SOURCE_FILES})
+
+IF (NOT TARGET StreamStringLibrary)
+ADD_SUBDIRECTORY(StreamStringLibrary)
+ENDIF ()
+
+TARGET_LINK_LIBRARIES(TokenLibrary StreamStringLibrary)
