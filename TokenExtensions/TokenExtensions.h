@@ -10,6 +10,7 @@
 class TokenExtensions
 {
 public:
+	static bool CreateFromString(std::string const & str, Token & token);
 	static bool TryToGetDelimiterToken(std::string const & str, Token & token);
 	static bool TryToGetKeywordToken(std::string const & str, Token & token);
 	static bool TryToGetTypeToken(
@@ -21,6 +22,7 @@ private:
 	static std::unordered_map<std::string, Token> const STRING_TO_KEYWORD_TOKEN;
 	static std::unordered_set<std::string> const TYPES;
 	static std::unordered_map<Token, std::string> const TOKEN_TO_NAME;
+	static std::unordered_map<std::string, Token> const NAME_TO_TOKEN;
 };
 
 #endif
