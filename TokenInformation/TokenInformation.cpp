@@ -6,17 +6,17 @@ TokenInformation::TokenInformation(Token token, StreamString const & tokenStream
 	, m_fileName(fileName)
 {}
 
-Token TokenInformation::GetToken()
+Token TokenInformation::GetToken() const
 {
 	return m_token;
 }
 
-StreamString const & TokenInformation::GetTokenStreamString()
+StreamString const & TokenInformation::GetTokenStreamString() const
 {
 	return m_tokenStreamString;
 }
 
-std::string const & TokenInformation::GetFileName()
+std::string const & TokenInformation::GetFileName() const
 {
 	return m_fileName;
 }

@@ -11,9 +11,9 @@ class TokenInformation
 public:
 	explicit TokenInformation() = default;
 	explicit TokenInformation(Token token, StreamString const & tokenStreamString, std::string const & fileName = "");
-	Token GetToken();
-	StreamString const & GetTokenStreamString();
-	std::string const & GetFileName();
+	Token GetToken() const;
+	StreamString const & GetTokenStreamString() const;
+	std::string const & GetFileName() const;
 	std::string ToString() const;
 
 private:
