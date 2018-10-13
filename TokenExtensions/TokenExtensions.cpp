@@ -163,6 +163,7 @@ std::unordered_map<Token, std::string> const TokenExtensions::TOKEN_TO_NAME {
 	{ Token::IDENTIFIER, TokenConstant::Name::IDENTIFIER },
 	{ Token::STRING_LITERAL, TokenConstant::Name::STRING_LITERAL },
 	{ Token::CHARACTER_LITERAL, TokenConstant::Name::CHARACTER_LITERAL },
+	{ Token::BOOLEAN_LITERAL, TokenConstant::Name::BOOLEAN_LITERAL },
 	{ Token::LINE_COMMENT, TokenConstant::Name::LINE_COMMENT },
 	{ Token::BLOCK_COMMENT, TokenConstant::Name::BLOCK_COMMENT },
 
