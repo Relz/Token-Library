@@ -116,6 +116,7 @@ std::unordered_set<std::string> const TokenExtensions::TYPES {
 	TokenConstant::CoreType::Number::INTEGER,
 	TokenConstant::CoreType::Complex::STRING,
 	TokenConstant::CoreType::VOID,
+	TokenConstant::CoreType::CHARACTER,
 	TokenConstant::CoreType::BOOLEAN
 };
 

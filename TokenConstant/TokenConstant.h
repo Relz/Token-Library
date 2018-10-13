@@ -99,6 +99,7 @@ public:
 		};
 
 		static std::string const VOID;
+		static std::string const CHARACTER;
 		static std::string const BOOLEAN;
 	};
 

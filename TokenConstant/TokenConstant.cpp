@@ -51,6 +51,7 @@ std::string const TokenConstant::CoreType::Complex::ARRAY = "Array";
 std::string const TokenConstant::CoreType::Complex::STRING = "String";
 
 std::string const TokenConstant::CoreType::VOID = "Void";
+std::string const TokenConstant::CoreType::CHARACTER = "Character";
 std::string const TokenConstant::CoreType::BOOLEAN = "Boolean";
 
 std::string const TokenConstant::Separator::DOT = ".";
