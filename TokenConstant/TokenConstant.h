@@ -54,6 +54,7 @@ public:
 
 		class Logical
 		{
+		public:
 			static std::string const AND;
 			static std::string const OR;
 		};
@@ -169,6 +170,7 @@ public:
 
 			class Logical
 			{
+			public:
 				static std::string const AND;
 				static std::string const OR;
 			};
