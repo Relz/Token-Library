@@ -102,7 +102,8 @@ std::unordered_set<std::string> const TokenExtensions::TYPES {
 	TokenConstant::CoreType::Number::FLOAT,
 	TokenConstant::CoreType::Number::INTEGER,
 	TokenConstant::CoreType::Complex::STRING,
-	TokenConstant::CoreType::VOID
+	TokenConstant::CoreType::VOID,
+	TokenConstant::CoreType::BOOLEAN
 };
 
 std::unordered_map<Token, std::string> const TokenExtensions::TOKEN_TO_NAME {
