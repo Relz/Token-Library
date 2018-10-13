@@ -13,6 +13,7 @@ public:
 	static bool CreateFromString(std::string const & str, Token & token);
 	static bool TryToGetDelimiterToken(std::string const & str, Token & token);
 	static bool TryToGetKeywordToken(std::string const & str, Token & token);
+	static bool TryToGetBooleanLiteralToken(std::string const & str, Token & token);
 	static bool TryToGetTypeToken(
 		std::string const & str, Token & token, std::unordered_set<std::string> const & customTypes);
 	static std::string ToString(Token token);

@@ -30,6 +30,16 @@ bool TokenExtensions::TryToGetKeywordToken(std::string const & str, Token & toke
 	return true;
 }
 
+bool TokenExtensions::TryToGetBooleanLiteralToken(std::string const & str, Token & token)
+{
+	if (str == "True" || str == "False")
+	{
+		token = Token::BOOLEAN_LITERAL;
+		return true;
+	};
+	return false;
+}
+
 bool TokenExtensions::TryToGetTypeToken(
 	std::string const & str, Token & token, std::unordered_set<std::string> const & customTypes)
 {
