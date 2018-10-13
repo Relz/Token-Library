@@ -51,6 +51,12 @@ public:
 			static std::string const MORE;
 			static std::string const LESS;
 		};
+
+		class Logical
+		{
+			static std::string const AND;
+			static std::string const OR;
+		};
 	};
 
 	class Keyword
@@ -159,6 +165,12 @@ public:
 				static std::string const LESS_OR_EQUIVALENCE;
 				static std::string const MORE;
 				static std::string const LESS;
+			};
+
+			class Logical
+			{
+				static std::string const AND;
+				static std::string const OR;
 			};
 		};
 

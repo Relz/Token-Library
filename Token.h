@@ -27,6 +27,10 @@ enum class Token
 	MORE,
 	LESS,
 
+	// Logical operators
+	AND,
+	OR,
+
 	// Keywords
 	CLASS,
 	EXTENDS,

@@ -24,6 +24,9 @@ std::string const TokenConstant::Operator::Comparison::LESS_OR_EQUIVALENCE = "<=
 std::string const TokenConstant::Operator::Comparison::MORE = ">";
 std::string const TokenConstant::Operator::Comparison::LESS = "<";
 
+std::string const TokenConstant::Operator::Logical::AND = "&&";
+std::string const TokenConstant::Operator::Logical::OR = "||";
+
 std::string const TokenConstant::Keyword::CLASS = "class";
 std::string const TokenConstant::Keyword::CONSTRUCTOR = "Constructor";
 std::string const TokenConstant::Keyword::DO = "do";
@@ -89,6 +92,9 @@ std::string const TokenConstant::Name::Operator::Comparison::MORE_OR_EQUIVALENCE
 std::string const TokenConstant::Name::Operator::Comparison::LESS_OR_EQUIVALENCE = "Less or equal";
 std::string const TokenConstant::Name::Operator::Comparison::MORE = "More";
 std::string const TokenConstant::Name::Operator::Comparison::LESS = "Less";
+
+std::string const TokenConstant::Name::Operator::Logical::AND = "And";
+std::string const TokenConstant::Name::Operator::Logical::OR = "Or";
 
 std::string const TokenConstant::Name::Keyword::CLASS = "Class keyword";
 std::string const TokenConstant::Name::Keyword::CONSTRUCTOR = "Constructor keyword";
