@@ -41,13 +41,24 @@ bool TokenExtensions::TryToGetBooleanLiteralToken(std::string const & str, Token
 }
 
 bool TokenExtensions::TryToGetTypeToken(
-	std::string const & str, Token & token, std::unordered_set<std::string> const & customTypes)
+		std::string const & str, Token & token, std::unordered_set<std::string> const & customTypes
+)
 {
 	if (TYPES.find(str) == TYPES.end() && customTypes.find(str) == customTypes.end())
 	{
 		return false;
 	}
 	token = Token::TYPE;
+	return true;
+}
+
+bool TokenExtensions::TryToGetPredefinedFunctionToken(std::string const & str, Token & token)
+{
+	if (PREDEFINED_FUNCTIONS.find(str) == PREDEFINED_FUNCTIONS.end())
+	{
+		return false;
+	}
+	token = PREDEFINED_FUNCTIONS.at(str);
 	return true;
 }
 
@@ -120,6 +131,11 @@ std::unordered_set<std::string> const TokenExtensions::TYPES {
 	TokenConstant::CoreType::BOOLEAN
 };
 
+std::unordered_map<std::string, Token> const TokenExtensions::PREDEFINED_FUNCTIONS {
+	{ TokenConstant::PredefinedFunctions::READ, Token::READ },
+	{ TokenConstant::PredefinedFunctions::WRITE, Token::WRITE }
+};
+
 std::unordered_map<Token, std::string> const TokenExtensions::TOKEN_TO_NAME {
 	{ Token::UNKNOWN, TokenConstant::Name::UNKNOWN },
 
@@ -175,6 +191,9 @@ std::unordered_map<Token, std::string> const TokenExtensions::TOKEN_TO_NAME {
 	{ Token::RIGHT_ROUND_BRACKET, TokenConstant::Name::Parentheses::ROUND_BRACKET_RIGHT },
 	{ Token::LEFT_SQUARE_BRACKET, TokenConstant::Name::Parentheses::SQUARE_BRACKET_LEFT },
 	{ Token::RIGHT_SQUARE_BRACKET, TokenConstant::Name::Parentheses::SQUARE_BRACKET_RIGHT },
+
+	{ Token::READ, TokenConstant::Name::PredefinedFunctions::READ },
+	{ Token::WRITE, TokenConstant::Name::PredefinedFunctions::WRITE },
 
 	{ Token::TYPE, TokenConstant::Name::TYPE },
 	{ Token::IDENTIFIER, TokenConstant::Name::IDENTIFIER },
@@ -242,6 +261,9 @@ std::unordered_map<std::string, Token> const TokenExtensions::NAME_TO_TOKEN {
 	{ TokenConstant::Name::Parentheses::ROUND_BRACKET_RIGHT, Token::RIGHT_ROUND_BRACKET },
 	{ TokenConstant::Name::Parentheses::SQUARE_BRACKET_LEFT, Token::LEFT_SQUARE_BRACKET },
 	{ TokenConstant::Name::Parentheses::SQUARE_BRACKET_RIGHT, Token::RIGHT_SQUARE_BRACKET },
+
+	{ TokenConstant::Name::PredefinedFunctions::READ, Token::READ },
+	{ TokenConstant::Name::PredefinedFunctions::WRITE, Token::WRITE },
 
 	{ TokenConstant::Name::TYPE, Token::TYPE },
 	{ TokenConstant::Name::IDENTIFIER, Token::IDENTIFIER },

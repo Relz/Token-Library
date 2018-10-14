@@ -69,6 +69,10 @@ enum class Token
 	LEFT_CURLY_BRACKET,
 	RIGHT_CURLY_BRACKET,
 
+	// Predefined functions
+	READ,
+	WRITE,
+
 	// Other
 	TYPE,
 	IDENTIFIER,

@@ -74,6 +74,9 @@ std::string const TokenConstant::Parentheses::QUOTE_STRING = "'";
 char const TokenConstant::Parentheses::DOUBLE_QUOTE_CHARACTER = '"';
 std::string const TokenConstant::Parentheses::DOUBLE_QUOTE_STRING = "\"";
 
+std::string const TokenConstant::PredefinedFunctions::READ = "Read";
+std::string const TokenConstant::PredefinedFunctions::WRITE = "Write";
+
 std::string const TokenConstant::Name::UNKNOWN = "Unknown";
 
 std::string const TokenConstant::Name::Operator::Arithmetic::DIVISION = "Division";
@@ -128,6 +131,9 @@ std::string const TokenConstant::Name::Parentheses::ROUND_BRACKET_LEFT = "Left r
 std::string const TokenConstant::Name::Parentheses::ROUND_BRACKET_RIGHT = "Right round bracket";
 std::string const TokenConstant::Name::Parentheses::SQUARE_BRACKET_LEFT = "Left square bracket";
 std::string const TokenConstant::Name::Parentheses::SQUARE_BRACKET_RIGHT = "Right square bracket";
+
+std::string const TokenConstant::Name::PredefinedFunctions::READ = "Read function";
+std::string const TokenConstant::Name::PredefinedFunctions::WRITE = "Write function";
 
 std::string const TokenConstant::Name::TYPE = "Type";
 std::string const TokenConstant::Name::IDENTIFIER = "Identifier";

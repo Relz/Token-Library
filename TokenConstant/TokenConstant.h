@@ -131,6 +131,13 @@ public:
 		static std::string const DOUBLE_QUOTE_STRING;
 	};
 
+	class PredefinedFunctions
+	{
+	public:
+		static std::string const READ;
+		static std::string const WRITE;
+	};
+
 	class Name
 	{
 	public:
@@ -219,6 +226,13 @@ public:
 			static std::string const ROUND_BRACKET_RIGHT;
 			static std::string const SQUARE_BRACKET_LEFT;
 			static std::string const SQUARE_BRACKET_RIGHT;
+		};
+
+		class PredefinedFunctions
+		{
+		public:
+			static std::string const READ;
+			static std::string const WRITE;
 		};
 
 		static std::string const TYPE;
