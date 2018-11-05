@@ -17,7 +17,7 @@ SET(SOURCE_FILES
 ADD_LIBRARY(TokenLibrary SHARED ${SOURCE_FILES})
 
 IF (NOT TARGET StreamStringLibrary)
-ADD_SUBDIRECTORY(StreamStringLibrary)
+	ADD_SUBDIRECTORY(StreamStringLibrary)
 ENDIF ()
 
 TARGET_LINK_LIBRARIES(TokenLibrary StreamStringLibrary)
