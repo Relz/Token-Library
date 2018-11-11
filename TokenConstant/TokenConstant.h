@@ -15,6 +15,7 @@ public:
 		static std::string const BLOCK_BEGINNING;
 		static std::string const BLOCK_ENDING;
 		static std::string const LINE;
+		static char const LINE_CHARACTER;
 	};
 
 	class Operator

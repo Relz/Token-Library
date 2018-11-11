@@ -41,7 +41,7 @@ bool TokenExtensions::TryToGetBooleanLiteralToken(std::string const & str, Token
 }
 
 bool TokenExtensions::TryToGetTypeToken(
-		std::string const & str, Token & token, std::unordered_set<std::string> const & customTypes
+	std::string const & str, Token & token, std::unordered_set<std::string> const & customTypes
 )
 {
 	if (TYPES.find(str) == TYPES.end() && customTypes.find(str) == customTypes.end())
@@ -80,7 +80,7 @@ std::unordered_map<std::string, Token> const TokenExtensions::STRING_TO_DELIMITE
 	{ TokenConstant::Operator::Assignment::MINUS_ASSIGNMENT, Token::MINUS_ASSIGNMENT },
 	{ TokenConstant::Operator::Assignment::MULTIPLY_ASSIGNMENT, Token::MULTIPLY_ASSIGNMENT },
 	{ TokenConstant::Operator::Assignment::DIVISION_ASSIGNMENT, Token::DIVISION_ASSIGNMENT },
-	{ TokenConstant::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT, Token::DIVISION_ASSIGNMENT },
+	{ TokenConstant::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT, Token::INTEGER_DIVISION_ASSIGNMENT },
 	{ TokenConstant::Operator::Assignment::MODULUS_ASSIGNMENT, Token::MODULUS_ASSIGNMENT },
 
 	{ TokenConstant::Operator::Comparison::EQUIVALENCE, Token::EQUIVALENCE },

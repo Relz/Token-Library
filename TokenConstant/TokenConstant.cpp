@@ -3,6 +3,7 @@
 std::string const TokenConstant::Comment::BLOCK_BEGINNING = "/*";
 std::string const TokenConstant::Comment::BLOCK_ENDING = "*/";
 std::string const TokenConstant::Comment::LINE = "#";
+char const TokenConstant::Comment::LINE_CHARACTER = '#';
 
 std::string const TokenConstant::Operator::Arithmetic::DIVISION = "/";
 std::string const TokenConstant::Operator::Arithmetic::INTEGER_DIVISION = "//";
