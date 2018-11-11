@@ -8,6 +8,7 @@ std::string const TokenConstant::Operator::Arithmetic::DIVISION = "/";
 std::string const TokenConstant::Operator::Arithmetic::INTEGER_DIVISION = "//";
 std::string const TokenConstant::Operator::Arithmetic::MINUS = "-";
 char const TokenConstant::Operator::Arithmetic::MINUS_CHARACTER = '-';
+std::string const TokenConstant::Operator::Arithmetic::MODULUS = "%";
 std::string const TokenConstant::Operator::Arithmetic::MULTIPLY = "*";
 std::string const TokenConstant::Operator::Arithmetic::PLUS = "+";
 char const TokenConstant::Operator::Arithmetic::PLUS_CHARACTER = '+';
@@ -16,6 +17,7 @@ std::string const TokenConstant::Operator::Assignment::ASSIGNMENT = "=";
 std::string const TokenConstant::Operator::Assignment::DIVISION_ASSIGNMENT = "/=";
 std::string const TokenConstant::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT = "//=";
 std::string const TokenConstant::Operator::Assignment::MINUS_ASSIGNMENT = "-=";
+std::string const TokenConstant::Operator::Assignment::MODULUS_ASSIGNMENT = "%=";
 std::string const TokenConstant::Operator::Assignment::MULTIPLY_ASSIGNMENT = "*=";
 std::string const TokenConstant::Operator::Assignment::PLUS_ASSIGNMENT = "+=";
 
@@ -84,6 +86,7 @@ std::string const TokenConstant::Name::UNKNOWN = "Unknown";
 std::string const TokenConstant::Name::Operator::Arithmetic::DIVISION = "Division";
 std::string const TokenConstant::Name::Operator::Arithmetic::INTEGER_DIVISION = "Integer division";
 std::string const TokenConstant::Name::Operator::Arithmetic::MINUS = "Minus";
+std::string const TokenConstant::Name::Operator::Arithmetic::MODULUS = "Modulus";
 std::string const TokenConstant::Name::Operator::Arithmetic::MULTIPLY = "Multiply";
 std::string const TokenConstant::Name::Operator::Arithmetic::PLUS = "Plus";
 
@@ -91,6 +94,7 @@ std::string const TokenConstant::Name::Operator::Assignment::ASSIGNMENT = "Assig
 std::string const TokenConstant::Name::Operator::Assignment::DIVISION_ASSIGNMENT = "Division assignment";
 std::string const TokenConstant::Name::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT = "Integer division assignment";
 std::string const TokenConstant::Name::Operator::Assignment::MINUS_ASSIGNMENT = "Minus assignment";
+std::string const TokenConstant::Name::Operator::Assignment::MODULUS_ASSIGNMENT = "Modulus assignment";
 std::string const TokenConstant::Name::Operator::Assignment::MULTIPLY_ASSIGNMENT = "Multiply assignment";
 std::string const TokenConstant::Name::Operator::Assignment::PLUS_ASSIGNMENT = "Plus assignment";
 

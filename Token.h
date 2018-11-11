@@ -12,6 +12,7 @@ enum class Token
 	MULTIPLY,
 	DIVISION,
 	INTEGER_DIVISION,
+	MODULUS,
 
 	// Assignment operators
 	ASSIGNMENT,
@@ -20,6 +21,7 @@ enum class Token
 	MULTIPLY_ASSIGNMENT,
 	DIVISION_ASSIGNMENT,
 	INTEGER_DIVISION_ASSIGNMENT,
+	MODULUS_ASSIGNMENT,
 
 	// Comparison operators
 	EQUIVALENCE,
