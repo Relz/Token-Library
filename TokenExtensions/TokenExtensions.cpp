@@ -140,6 +140,7 @@ std::unordered_map<Token, std::string> const TokenExtensions::TOKEN_TO_NAME {
 	{ Token::UNKNOWN, TokenConstant::Name::UNKNOWN },
 
 	{ Token::DIVISION, TokenConstant::Name::Operator::Arithmetic::DIVISION },
+	{ Token::INTEGER_DIVISION, TokenConstant::Name::Operator::Arithmetic::INTEGER_DIVISION },
 	{ Token::MINUS, TokenConstant::Name::Operator::Arithmetic::MINUS },
 	{ Token::MULTIPLY, TokenConstant::Name::Operator::Arithmetic::MULTIPLY },
 	{ Token::PLUS, TokenConstant::Name::Operator::Arithmetic::PLUS },
@@ -148,6 +149,7 @@ std::unordered_map<Token, std::string> const TokenExtensions::TOKEN_TO_NAME {
 	{ Token::MULTIPLY_ASSIGNMENT, TokenConstant::Name::Operator::Assignment::MULTIPLY_ASSIGNMENT },
 	{ Token::MINUS_ASSIGNMENT, TokenConstant::Name::Operator::Assignment::MINUS_ASSIGNMENT },
 	{ Token::DIVISION_ASSIGNMENT, TokenConstant::Name::Operator::Assignment::DIVISION_ASSIGNMENT },
+	{ Token::INTEGER_DIVISION_ASSIGNMENT, TokenConstant::Name::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT },
 	{ Token::ASSIGNMENT, TokenConstant::Name::Operator::Assignment::ASSIGNMENT },
 
 	{ Token::EQUIVALENCE, TokenConstant::Name::Operator::Comparison::EQUIVALENCE },
@@ -210,6 +212,7 @@ std::unordered_map<std::string, Token> const TokenExtensions::NAME_TO_TOKEN {
 	{ TokenConstant::Name::UNKNOWN, Token::UNKNOWN },
 
 	{ TokenConstant::Name::Operator::Arithmetic::DIVISION, Token::DIVISION },
+	{ TokenConstant::Name::Operator::Arithmetic::INTEGER_DIVISION, Token::INTEGER_DIVISION },
 	{ TokenConstant::Name::Operator::Arithmetic::MINUS, Token::MINUS },
 	{ TokenConstant::Name::Operator::Arithmetic::MULTIPLY, Token::MULTIPLY },
 	{ TokenConstant::Name::Operator::Arithmetic::PLUS, Token::PLUS },
@@ -218,6 +221,7 @@ std::unordered_map<std::string, Token> const TokenExtensions::NAME_TO_TOKEN {
 	{ TokenConstant::Name::Operator::Assignment::MULTIPLY_ASSIGNMENT, Token::MULTIPLY_ASSIGNMENT },
 	{ TokenConstant::Name::Operator::Assignment::MINUS_ASSIGNMENT, Token::MINUS_ASSIGNMENT },
 	{ TokenConstant::Name::Operator::Assignment::DIVISION_ASSIGNMENT, Token::DIVISION_ASSIGNMENT },
+	{ TokenConstant::Name::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT, Token::INTEGER_DIVISION_ASSIGNMENT },
 	{ TokenConstant::Name::Operator::Assignment::ASSIGNMENT, Token::ASSIGNMENT },
 
 	{ TokenConstant::Name::Operator::Comparison::EQUIVALENCE, Token::EQUIVALENCE },

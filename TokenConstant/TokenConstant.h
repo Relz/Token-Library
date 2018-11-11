@@ -24,6 +24,7 @@ public:
 		{
 		public:
 			static std::string const DIVISION;
+			static std::string const INTEGER_DIVISION;
 			static std::string const MINUS;
 			static char const MINUS_CHARACTER;
 			static std::string const MULTIPLY;
@@ -36,6 +37,7 @@ public:
 		public:
 			static std::string const ASSIGNMENT;
 			static std::string const DIVISION_ASSIGNMENT;
+			static std::string const INTEGER_DIVISION_ASSIGNMENT;
 			static std::string const MINUS_ASSIGNMENT;
 			static std::string const MULTIPLY_ASSIGNMENT;
 			static std::string const PLUS_ASSIGNMENT;
@@ -150,6 +152,7 @@ public:
 			{
 			public:
 				static std::string const DIVISION;
+				static std::string const INTEGER_DIVISION;
 				static std::string const MINUS;
 				static std::string const MULTIPLY;
 				static std::string const PLUS;
@@ -160,6 +163,7 @@ public:
 			public:
 				static std::string const ASSIGNMENT;
 				static std::string const DIVISION_ASSIGNMENT;
+				static std::string const INTEGER_DIVISION_ASSIGNMENT;
 				static std::string const MINUS_ASSIGNMENT;
 				static std::string const MULTIPLY_ASSIGNMENT;
 				static std::string const PLUS_ASSIGNMENT;

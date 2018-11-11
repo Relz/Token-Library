@@ -11,6 +11,7 @@ enum class Token
 	MINUS,
 	MULTIPLY,
 	DIVISION,
+	INTEGER_DIVISION,
 
 	// Assignment operators
 	ASSIGNMENT,
@@ -18,6 +19,7 @@ enum class Token
 	MINUS_ASSIGNMENT,
 	MULTIPLY_ASSIGNMENT,
 	DIVISION_ASSIGNMENT,
+	INTEGER_DIVISION_ASSIGNMENT,
 
 	// Comparison operators
 	EQUIVALENCE,
