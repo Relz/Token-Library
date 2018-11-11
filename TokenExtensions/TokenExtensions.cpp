@@ -69,7 +69,9 @@ std::string TokenExtensions::ToString(Token token)
 
 std::unordered_map<std::string, Token> const TokenExtensions::STRING_TO_DELIMITER_TOKEN {
 	{ TokenConstant::Operator::Arithmetic::DIVISION, Token::DIVISION },
+	{ TokenConstant::Operator::Arithmetic::INTEGER_DIVISION, Token::INTEGER_DIVISION },
 	{ TokenConstant::Operator::Arithmetic::MINUS, Token::MINUS },
+	{ TokenConstant::Operator::Arithmetic::MODULUS, Token::MODULUS },
 	{ TokenConstant::Operator::Arithmetic::MULTIPLY, Token::MULTIPLY },
 	{ TokenConstant::Operator::Arithmetic::PLUS, Token::PLUS },
 
@@ -78,6 +80,8 @@ std::unordered_map<std::string, Token> const TokenExtensions::STRING_TO_DELIMITE
 	{ TokenConstant::Operator::Assignment::MINUS_ASSIGNMENT, Token::MINUS_ASSIGNMENT },
 	{ TokenConstant::Operator::Assignment::MULTIPLY_ASSIGNMENT, Token::MULTIPLY_ASSIGNMENT },
 	{ TokenConstant::Operator::Assignment::DIVISION_ASSIGNMENT, Token::DIVISION_ASSIGNMENT },
+	{ TokenConstant::Operator::Assignment::INTEGER_DIVISION_ASSIGNMENT, Token::DIVISION_ASSIGNMENT },
+	{ TokenConstant::Operator::Assignment::MODULUS_ASSIGNMENT, Token::MODULUS_ASSIGNMENT },
 
 	{ TokenConstant::Operator::Comparison::EQUIVALENCE, Token::EQUIVALENCE },
 	{ TokenConstant::Operator::Comparison::NOT_EQUIVALENCE, Token::NOT_EQUIVALENCE },
