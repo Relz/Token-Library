@@ -149,6 +149,7 @@ std::string const TokenConstant::Name::IDENTIFIER = "Identifier";
 std::string const TokenConstant::Name::STRING_LITERAL = "String literal";
 std::string const TokenConstant::Name::CHARACTER_LITERAL = "Character literal";
 std::string const TokenConstant::Name::BOOLEAN_LITERAL = "Boolean literal";
+std::string const TokenConstant::Name::ARRAY_LITERAL = "Array literal";
 std::string const TokenConstant::Name::LINE_COMMENT = "Line comment";
 std::string const TokenConstant::Name::BLOCK_COMMENT = "Block comment";
 

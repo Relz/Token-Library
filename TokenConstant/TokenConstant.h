@@ -249,6 +249,7 @@ public:
 		static std::string const STRING_LITERAL;
 		static std::string const CHARACTER_LITERAL;
 		static std::string const BOOLEAN_LITERAL;
+		static std::string const ARRAY_LITERAL;
 		static std::string const LINE_COMMENT;
 		static std::string const BLOCK_COMMENT;
 
